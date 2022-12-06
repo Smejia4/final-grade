@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculate final grade</title>
+</head>
+<body>
+    <header>
+        <h1>Calcule su nota final</h1>
+    </header>
+    <main>
+        <div class="container-grades">
+            <label for="txt-name">Ingrese su nombre</label>
+            <input type="text" id="txt-name" placeholder="Ingrese su nombre">
+            <label for="">Ingrese sus notas</label>
+            <input type="number" id="grade-one" placeholder="Ingrese su primera nota" step="0.01" min="1.00" max="5"></input>
+            <input type="number" id="grade-two" placeholder="Ingrese su segunda nota" step="0.01" min="1.00" max="5"></input>
+            <input type="number" id="grade-three" placeholder="Ingrese su tercera nota" step="0.01" min="1.00" max="5"></input>
+            <button id="btn-send">Calcular</button>
+        </div>
+        <div class="container-result">
+            <p id="response-prediction-third-note"></p>
+            <p id="response"></p>
+        </div>
+    </main>
+    <script src="app.js"></script>
+</body>
+</html>
